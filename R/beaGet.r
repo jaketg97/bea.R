@@ -84,8 +84,8 @@ beaGet <- function(beaSpec, asString=FALSE, asList=FALSE, asTable=TRUE, asWide=T
 		if (asTable) {
 			userWide <- asWide
 			userTabStyle <- iTableStyle
-			beaResults <- bea.R::bea2Tab(beaPayload, asWide = userWide, iTableStyle = userTabStyle)
-			return(beaResults)
+			# beaResults <- bea.R::bea2Tab(beaPayload, asWide = userWide, iTableStyle = userTabStyle)
+			return(beaPayload)
 		}
 		else {
 			if(asList) {
